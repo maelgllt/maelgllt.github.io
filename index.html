@@ -1,11 +1,641 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Maël GUILLOTEAU - Portfolio</title>
+    <!-- === Fichiers CSS === -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feuilles/couleur-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- === Changement de style === -->
+    <link rel="stylesheet" href="css/feuilles/couleur-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/feuilles/couleur-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/feuilles/couleur-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/feuilles/couleur-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/feuilles/couleur-5.css" class="alternate-style" title="color-5" disabled>
+
+    <link rel="stylesheet" href="css/style-switcher.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <!-- === Début du conteneur principal === -->
+    <div class="main-container">
+        <!-- === Début de la barre latérale === -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>M</span>aël</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#accueil" class="active"><i class="fa fa-home"></i>Accueil</a></li>
+                <li><a href="#profil"><i class="fa fa-user"></i>Profil</a></li>
+                <li><a href="#connaissances"><i class="fa fa-list"></i>Connaissances</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+            </ul>
+        </div>
+        <!-- === Fin de la barre latérale === -->
+
+        <!-- === Début du contenu principal === -->
+        <div class="main-content">
+            <!-- === Début de la section Accueil === -->
+            <section class="home active section " id="accueil">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Bonjour, je m'appelle <span class="name">Maël Guilloteau</span></h3>
+                            <h3 class="my-profession">Je suis <span class="typing">développeur web</span></h3>
+                            <p>Passionné par l'informatique et plus particulièrement par le web, j'ai pour objectif d'en faire un métier. C'est pourquoi je suis <span class="bold">à la recherche d'un stage de 3 mois à partir du 1er juillet 2024</span>
+                                ainsi qu'une opportunité d'alternance de 2 années pour la rentrée prochaine.
+                            </p>
+                            <a href="#" class="btn" id="cv">Téléchargez mon CV</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="images/profil.jpg" alt="Photo de profil">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- === Fin de la section Accueil === -->
+
+            <!-- === Début de la section Profil === -->
+            <section class="profil section " id="profil">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Profil</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="profil-content padd-15">
+                            <div class="row">
+                                <div class="profil-text padd-15">
+                                    <h3>Je m'appelle Maël Guilloteau et je suis <span>développeur web junior</span></h3>
+                                    <p>Curieux et determiné, j'ambitionne d'approfondir mes connaissances en frontend afin d'évoluer 
+                                        vers un poste de développeur FullStack par la suite. Au cours de mes différentes années d'études, j'ai acquis une expertise approfondie en développement web
+                                        en utilisant des langages tels que JavaScript, PHP et MySQL. Mon expérience pratique inclut
+                                        la participation à des projets concrets comme indiqué ci dessous.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Naissance : <span>29 mars 2003</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Age : <span>20</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <a href="mailto:mael.guilloteau@outlook.fr"><span>mael.guilloteau@outlook.fr</span></a></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Tél : <a href="telto:0769021004"><span>07.69.02.10.04</span></a></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Ville : <span>Angers</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Permis B : <span>Oui</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>LinkedIn : <a href="https://www.linkedin.com/in/maël-guilloteau/"><span>Maël GUILLOTEAU</span></a></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Github : <a href="https://github.com/maelgllt"><span>maelgllt</span></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#contact" data-section-index="1" class="btn contact-me">Contactez moi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hobby padd-15">
+                                    <div class="hobby-item padd-15 shadow-dark">
+                                        <i class="fas fa-laptop"></i>
+                                        <p>Informatique</p>
+                                    </div>
+                                    <div class="hobby-item padd-15 shadow-dark">
+                                        <i class="fas fa-futbol"></i>
+                                        <p>Football</p>
+                                    </div>
+                                    <div class="hobby-item padd-15 shadow-dark">
+                                        <i class="fas fa-gamepad"></i>
+                                        <p>Jeux Vidéo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="experiences-pro padd-15">
+                                    <h3 class="title">Expériences professionnelles</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Mai 2023 - Juillet 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Stage • Développement web</h4>
+                                                    <p class="timeline-text">
+                                                        Lors de ce stage au sein de l'agence <span>Angers Ça Bouge</span>, ma mission principale était la 
+                                                        création de sites web, vitrines ou e-commerce (mise en page, référencement SEO...) 
+                                                        pour les clients et j'étais accompagné par un développeur. La conception des sites se faisait
+                                                        à l'aide du CMS WordPress. J'ai également pu jouer un rôle de chef de projet pour des 
+                                                        missions plus secondaires. 
+                                                    </p>
+                                                </div>
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Mai 2022 - Juin 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Stage • Audit de vulnérabilités</h4>
+                                                    <p class="timeline-text">
+                                                        Mon sujet de stage était l'étude d'une solution d'audit de vulnérabilités au sein de 
+                                                        <span>Tgs France</span> : Sherlock. Elle permettait d'auditer tous les appareils connectés
+                                                        au réseau grâce à un boitier afin de repérer d'éventuelles failles de sécurité. J'ai ainsi 
+                                                        pu participer à la sécurisation de l'infrastructure de l'entreprise.
+                                                    </p>
+                                                </div>
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Novembre 2017
+                                                    </h3>
+                                                    <h4 class="timeline-title">Stage • Maintenance informatique</h4>
+                                                    <p class="timeline-text">
+                                                        Stage de 3 jours durant mon année de 3ème au cours duquel j'ai observé mon tuteur de stage dans le
+                                                        domaine de la maintance informatique au sein de l'entreprise <span>Amix Informatique</span>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experiences-perso padd-15">
+                                    <h3 class="title">Expériences personnelles</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Octobre 2023 - Janvier 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Projet • BiblioTech</h4>
+                                                    <p class="timeline-text">
+                                                        Projet réalisé au cours de ma troisièmme année d'étude à l'ESAIP. Il consistait
+                                                        en la réalisation d'une application web de gestion d'une bilbiothèque. L'objectif 
+                                                        était d'offrir une interface claire, intuitive et réactive. <br>
+                                                        Technologies utilisées : Vue.js / PHP <br>
+                                                        En savoir plus sur le projet : <a href="https://github.com/maelgllt/BiblioTECH">Lien Github</a>
+                                                    </p>
+                                                </div>
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Mars 2023 - Avril 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Projet • Rex</h4>
+                                                    <p class="timeline-text">
+                                                        Ce projet à été réalisé durant ma deuxième année à l'ESAIP. Avec deux de mes camarades,
+                                                        nous avons développé une application de chat à l'image de WhatsApp. <br>
+                                                        Technologies utilisées : React.js / FireBase
+                                                    </p>
+                                                </div>
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Mars 2022 - Avril 2022
+                                                    </h3>
+                                                    <h4 class="timeline-title">Projet • ScoreFoot</h4>
+                                                    <p class="timeline-text">
+                                                        Projet réalisé avec un camarade de classe dans le cadre de ma première année 
+                                                        à l'ESAIP. Étant passionnés de web et de football, nous avons eu l'idée de 
+                                                        développer une interface web pour afficher les résultats des matchs de football 
+                                                        en direct.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="formation padd-15">
+                                    <h3 class="title">Formation</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Depuis Septembre 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">ESAIP • École d'ingénieur</h4>
+                                                    <p class="timeline-text">
+                                                        <span>Bachelor Numérique</span>. J'acquiers de nouvelles compétences en développement,
+                                                        en systèmes et réseaux, en langues et cultures et en management de projet. Je me suis 
+                                                        spécialisé en dernière année en choisissant l'option développement web et mobile.
+                                                    </p>
+                                                </div>
+                                                <!-- === Élément de la timeline === -->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> Septembre 2018 - Juin 2021
+                                                    </h3>
+                                                    <h4 class="timeline-title">Lycée Emmanuel Mounier</h4>
+                                                    <p class="timeline-text">
+                                                        <span>Baccalauréat général</span> mention assez bien avec les spécialités
+                                                        Numérique et Sciences Informatique (NSI) et Mathématiques.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- === Fin de la section Profil === -->
+
+            <!-- === Début de la section Connaissances === -->
+            <section class="knowledge section " id="connaissances">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Connaissances</h2>
+                        </div>
+                    </div>
+
+                    <h3 class="padd-15">Langages</h3>
+                    <div class="row">
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-html5" style="color: #E34F26;"></i>
+                                </div>
+                                <h4>HTML5</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                                </div>
+                                <h4>CSS3</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-js" style="color:#F7DF1E;"></i>
+                                </div>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-php" style="color:#777BB4;"></i>
+                                </div>
+                                <h4>PHP</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-vuejs" style="color: #4FC08D;"></i>
+                                </div>
+                                <h4>Vue.js</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-react" style="color: #61DAFB;"></i>
+                                </div>
+                                <h4>React.js</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-java" style="color: red;"></i>
+                                </div>
+                                <h4>Java</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-python" style="color: #3776AB;"></i>
+                                </div>
+                                <h4>Python</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-solid fa-c" style="color: #A8B9CC;"></i>
+                                </div>
+                                <h4>C</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                    </div>
+
+                    <h3 class="padd-15">Autres technologies...</h3>
+                    <div class="row">
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>MySQL</title><path d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 00-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 00-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135l-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 00.3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 00-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 00-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 00-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 00-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 01-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 01-.35-.4 8.76 8.76 0 01-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 01-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 012.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z" fill="#4479A1"/></svg>
+                                </div>
+                                <h4>MySQL</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-linux"></i>
+                                </div>
+                                <h4>Linux</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-git-alt" style="color: #F05032;"></i>
+                                </div>
+                                <h4>Git</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Flutter</title><path d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z" fill="#02569B"/></svg>
+                                </div>
+                                <h4>Flutter</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Android</title><path d="M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z" fill="#34A853"/></svg>
+                                </div>
+                                <h4>Android Studio</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        
+                    </div>
+
+                    <h3 class="padd-15">Outils</h3>
+                    <div class="row">
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-trello" style="color: #0052CC;"></i>
+                                </div>
+                                <h4>Trello</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Notion</title><path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg>
+                                </div>
+                                <h4>Notion</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        <!-- === Début d'un élement de connaissances === -->
+                        <div class="knowledge-item padd-15">
+                            <div class="knowledge-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-brands fa-figma" style="color: #F24E1E;"></i>
+                                </div>
+                                <h4>Figma</h4>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de connaissances === -->
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- === Fin de la section Connaissances === -->
+
+            <!-- === Début de la section Portfolio === -->
+            <section class="portfolio section " id="portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Mes derniers projets : </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- === Début d'un élement de portfolio === -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-info">
+                                    <img src="images/portfolio/BiblioTech.png" alt="BiblioTECH">
+                                    <p>BiblioTech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de portfolio === -->
+                        <!-- === Début d'un élement de portfolio === -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-info">
+                                    <img src="images/portfolio/ASPG.png" alt="ASPG">
+                                    <p>ASPG</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de portfolio === -->
+                        <!-- === Début d'un élement de portfolio === -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-info">
+                                    <img src="images/portfolio/ScoreFoot.png" alt="ScoreFoot">
+                                    <p>ScoreFoot</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- === Fin d'un élement de portfolio === -->
+                        <div class="contact">
+                            <p>Si vous avez des questions sur les projets, n'hésitez pas à me contacter</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- === Fin de la section Portfolio === -->
+
+            <!-- === Début de la section Contact === -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Avez-vous des questions ?</h3>
+                    <h4 class="contact-sub-title padd-15">N'hésitez pas à me contacter !</h4>
+                    <div class="row">
+                        <!-- === Début d'un élement de contact === -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-solid fa-phone"></i></div>
+                            <h4>Téléphone</h4>
+                            <a href="telto:0769021004">07.69.02.10.04</a>
+                        </div>
+                        <!-- === Fin d'un élement de contact === -->
+                        <!-- === Début d'un élement de contact === -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-solid fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <a href="mailto:mael.guilloteau@outlook.fr">mael.guilloteau@outlook.fr</a>
+                        </div>
+                        <!-- === Fin d'un élement de contact === -->
+                        <!-- === Début d'un élement de contact === -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-brands fa-linkedin"></i></div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/maël-guilloteau/">Maël GUILLOTEAU</a>
+                        </div>
+                        <!-- === Fin d'un élement de contact === -->
+                        <!-- === Début d'un élement de contact === -->
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-brands fa-github"></i></div>
+                            <h4>Github</h4>
+                            <a href="https://github.com/maelgllt">maelgllt</a>
+                        </div>
+                        <!-- === Fin d'un élement de contact === -->
+                    </div>
+
+                    <h3 class="contact-title padd-15">Envoyez moi un email</h3>
+                    <h4 class="contact-sub-title padd-15">Je répond rapidement ;)</h4>
+                    <!-- === Formulaire de contact-->
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <form action="https://api.web3forms.com/submit" id="form" method="POST">
+                                <input type="hidden" name="access_key" value="fd074649-0875-460c-a0be-eae449032b0b">
+                                <input type="hidden" name="subject" value="Nouvelle soumission de mon portfolio">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Nom" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Objet" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <button type="submit" class="btn">Envoyer le message</button>
+                                    </div>
+                                    <div id="result"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- === Fin de la section Contact === -->
+        </div>
+        <!-- === Fin du contenu principal === -->
+
+    </div>
+    <!-- === Fin du conteneur principal === -->
+
+    <!-- === Début de la partie changement de style === -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Couleur du thème</h4>
+        <div class="colors">
+            <span class="color-1"></span>
+            <span class="color-2"></span>
+            <span class="color-3"></span>
+            <span class="color-4"></span>
+            <span class="color-5"></span>
+        </div>
+    </div>
+    <!-- === Fin de la partie changement de style === -->
+
+    <!-- === Fichiers JS === -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>
