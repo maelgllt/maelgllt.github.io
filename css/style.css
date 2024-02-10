@@ -850,3 +850,10 @@ h3.my-profession{
         max-width: 100%;
     }
 }
+
+@media (max-width:599px){
+    .profil .profil-content .personal-info .info-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
