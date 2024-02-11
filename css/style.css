@@ -450,7 +450,7 @@ h3.my-profession{
 }
 
 .profil .profil-content .hobby .hobby-item{
-    max-width: 25%;
+    max-width: 33%;
     padding: 10px;
     border: 1px solid var(--text-black-700);
     border-radius: 10px;
@@ -831,6 +831,10 @@ h3.my-profession{
     .portfolio .portfolio-item,
     .contact .contact-info-item{
         flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .profil .profil-content .hobby .hobby-item{
         max-width: 50%;
     }
 
