@@ -1,6 +1,6 @@
 /* === Animation du texte === */
 var typed = new Typed(".typing", {
-    strings:["développeur web junior.", "étudiant à l'ESAIP.", "à la recherche d'un stage !", "futur étudiant à MyDigitalSchool.", "à la recherche d'une alternance !"],
+    strings:["développeur web junior.", "étudiant à l'ESAIP.", "en stage chez Parker Meggitt.", "futur étudiant à MyDigitalSchool.", "futur alternant chez Parker Meggitt."],
     typeSpeed:100,
     BackSpeed:60,
     loop:true
