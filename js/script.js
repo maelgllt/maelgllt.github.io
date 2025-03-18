@@ -126,3 +126,43 @@ form.addEventListener('submit', function(e) {
             }, 4000);
         });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var duration = 1000;
+    var easing = function(t) { return t * (2 - t); };
+  
+    var lastScrollTop = 0;
+  
+    window.addEventListener("scroll", function() {
+      var currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+      if (currentScrollTop > lastScrollTop) {
+        scrollToSmoothly(currentScrollTop, currentScrollTop + 100, duration);
+      } else {
+        scrollToSmoothly(currentScrollTop, currentScrollTop - 100, duration);
+      }
+  
+      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+    });
+  
+    function scrollToSmoothly(start, end, duration) {
+      var startTime = null;
+  
+      function scrollAnimation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var elapsedTime = currentTime - startTime;
+        var progress = Math.min(elapsedTime / duration, 1);
+        var ease = easing(progress);
+  
+        window.scrollTo(0, start + (end - start) * ease);
+  
+        if (elapsedTime < duration) {
+          requestAnimationFrame(scrollAnimation);
+        }
+      }
+  
+      requestAnimationFrame(scrollAnimation);
+    }
+  });
+  
